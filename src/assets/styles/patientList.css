@@ -1,17 +1,22 @@
 .patients-list-container {
   width: 300px;
   background-color: #FFFFFF;
-  padding: 0.5em 1em;
   grid-area: patients;
-  height: 88vh;
-  overflow-y: scroll;
-  scrollbar-width: thin;
-  scrollbar-color: #072635 #E3E4E6;
+
 }
 
 .patients-list-container .patients-list-title {
   display: flex;
   justify-content: space-between;
+  padding: 0.5em 1em;
+}
+
+.patients-details {
+  height: 80vh;
+  padding: 0.5em 1em;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #888888 #E3E4E6;
 }
 
 .patient-tile {

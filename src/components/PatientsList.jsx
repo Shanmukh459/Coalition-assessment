@@ -23,7 +23,7 @@ const PatientsList = ({data}) => {
         <h2>Patients</h2>
         <Icon icon="search" />
       </div>
-      <div>
+      <div className='patients-details'>
         {patientsListElements}
       </div>
     </div>
