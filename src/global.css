@@ -3,15 +3,19 @@ body {
   background-color: #F6F7F8;
   margin: 0;
   padding: 1em;
+  color: #072635;
+  
+  /* height: 100vh; */
 }
 
-/* .app-container {
+.app-container {
   display: grid;
-  grid-template-rows: 10% 50% 5% 1fr;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 1fr 10fr 1fr 5fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: 
     "header header header"
     "patients history patient-detail"
     "patients list patient-detail"
     "patients list results";
-} */
+  grid-gap: 1em;
+}

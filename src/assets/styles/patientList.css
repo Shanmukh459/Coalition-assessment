@@ -1,0 +1,49 @@
+.patients-list-container {
+  width: 300px;
+  background-color: #FFFFFF;
+  padding: 0.5em 1em;
+  grid-area: patients;
+  height: 88vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #072635 #E3E4E6;
+}
+
+.patients-list-container .patients-list-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.patient-tile {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8em 0;
+}
+
+.patient-icon-details {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.patient-tile .person-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.patient-tile p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.patient-tile .name {
+  font-weight: 700;
+}
+
+.patient-tile .gender {
+  color: #707070;
+}
+
+.person-tile img {
+  margin-left: auto;
+}

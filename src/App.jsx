@@ -5,6 +5,9 @@ import PatientsList from "./components/PatientsList"
 
 const App = () => {
   const data = useData()
+  if(!data) {
+    return <h1>Loading!</h1>
+  }
   return (
     <div className="app-container">
       <Header />
