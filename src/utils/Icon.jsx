@@ -9,7 +9,11 @@ import jose from "../assets/joseSimmons.png"
 import settings from "../assets/settings.svg"
 import more from "../assets/more.svg"
 import search from "../assets/search.svg"
-import more_horiz from "../assets/more_horiz.svg"
+import morehoriz from "../assets/morehoriz.svg"
+import femaleIcon from "../assets/femaleIcon.svg"
+import phoneIcon from "../assets/phoneIcon.svg"
+import birthIcon from "../assets/birthIcon.svg"
+import insuranceIcon from "../assets/insuranceIcon.svg"
 
 const icons = {
   logo,
@@ -22,7 +26,11 @@ const icons = {
   settings,
   more,
   search,
-  more_horiz
+  morehoriz,
+  femaleIcon,
+  birthIcon,
+  phoneIcon,
+  insuranceIcon,
 }
 
 const Icon = ({ icon }) => {

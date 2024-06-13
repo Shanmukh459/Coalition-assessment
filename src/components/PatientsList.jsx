@@ -13,7 +13,7 @@ const PatientsList = ({data}) => {
             <p className='gender'>{d.gender}, {d.age}</p>
           </div>
         </div>
-        <Icon icon="more_horiz" />
+        <Icon icon="morehoriz" />
       </div>
     )
   })

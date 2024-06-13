@@ -1,0 +1,47 @@
+.patient-details-tile {
+  grid-area: patient-detail;
+  background-color: #FFFFFF;
+  padding: 2em 1em 1em 1em;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.patient-details-tile .patient-picture {
+  /* width: 200px; */
+  /* height: 200px; */
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+
+.patient-detail-inner {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.patient-detail-inner img {
+  width: 40px;
+}
+
+.patient-detail-inner p{
+  margin: 0;
+  font-size: 14px;
+}
+
+.patient-detail-value {
+  font-weight: 700;
+}
+
+.more-info {
+  background-color: #01F0D0;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 40px;
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  margin-top: 1em;
+}
