@@ -8,6 +8,8 @@ import transaction from "../assets/transaction.svg"
 import jose from "../assets/joseSimmons.png"
 import settings from "../assets/settings.svg"
 import more from "../assets/more.svg"
+import search from "../assets/search.svg"
+import more_horiz from "../assets/more_horiz.svg"
 
 const icons = {
   logo,
@@ -19,6 +21,8 @@ const icons = {
   jose,
   settings,
   more,
+  search,
+  more_horiz
 }
 
 const Icon = ({ icon }) => {
