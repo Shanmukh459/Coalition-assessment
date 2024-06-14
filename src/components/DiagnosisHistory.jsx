@@ -1,12 +1,13 @@
 import React from 'react'
 import Icon from '../utils/Icon'
 import "../assets/styles/diagnosisHistory.css"
+import ResultsPlot from './ResultsPlot'
 
-const DiagnosisHistory = () => {
+const DiagnosisHistory = ({ patientData }) => {
   return (
     <div className="diagnosis-history">
       <h2>Diagnosis History</h2>
-      {/* {need to import the plot} */}
+      <ResultsPlot data={patientData} />
       <div className='diagnosis-results'>
         <div className='respiratory-rate-result'>
           <Icon icon="respiratoryRate" />

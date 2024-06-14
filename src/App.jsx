@@ -21,7 +21,7 @@ const App = () => {
       <PatientsList data={data} />
       <PatientDetail patientDetails={selectedPatient}/>
       <DiagnosticList diagnosisRecords={selectedPatient.diagnostic_list} />
-      <DiagnosisHistory />
+      <DiagnosisHistory patientData={selectedPatient}/>
     </div>
   )
 }
