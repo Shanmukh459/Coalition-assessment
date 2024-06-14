@@ -16,12 +16,14 @@ body {
 
 .app-container {
   display: grid;
-  grid-template-rows: 1fr 10fr 1fr 5fr;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 4fr 0.1fr 1.5fr;
+  grid-template-columns: 1fr 2.5fr 1fr;
   grid-template-areas: 
     "header header header"
     "patients history patient-detail"
     "patients list patient-detail"
     "patients list results";
   grid-gap: 1em;
+  max-height: 100vh;
+  padding: 0.5em;
 }

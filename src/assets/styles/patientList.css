@@ -8,10 +8,11 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5em 1em;
+  margin-bottom: 1em;
 }
 
 .patients-details {
-  height: 80vh;
+  max-height: 90%;
   padding: 0.5em 1em;
   overflow-y: scroll;
   scrollbar-width: thin;

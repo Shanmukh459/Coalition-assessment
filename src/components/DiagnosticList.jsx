@@ -12,22 +12,23 @@ const DiagnosticList = ({ diagnosisRecords }) => {
     )
 })
 
-
   return (
     <div className='diagnostic-list'>
       <h2>Diagnostic List</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Problem/Diagnosis</th>
-            <th>Description</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          {diagnosisRecordElements} 
-        </tbody>
-      </table>
+      <div className='table-wrapper'>
+        <table>
+          <thead>
+            <tr>
+              <th>Problem/Diagnosis</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {diagnosisRecordElements} 
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }

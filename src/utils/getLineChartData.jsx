@@ -1,5 +1,4 @@
 export const getLineChartData = (data) => {
-  console.log(data)
   const systolicData = data.diagnosis_history.map(d => d.blood_pressure.systolic.value)
   const diastolicData = data.diagnosis_history.map(d => d.blood_pressure.diastolic.value)
   const lineChartData = {

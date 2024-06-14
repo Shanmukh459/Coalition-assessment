@@ -34,21 +34,6 @@ const ResultsPlot = ({data}) => {
         align: "start",
         
         labels: {
-          generateLabels: (chart) => {
-            const data = chart.data;
-            return data.datasets.map((dataset, i) => ({
-              text: dataset.label + `\n 160 \n Higher than Average`, // Add custom text here
-              fillStyle: dataset.backgroundColor,
-              strokeStyle: dataset.borderColor,
-              lineCap: dataset.borderCapStyle,
-              lineDash: dataset.borderDash,
-              lineDashOffset: dataset.borderDashOffset,
-              lineJoin: dataset.borderJoinStyle,
-              pointStyle: 'circle', // Change point style to circle
-              hidden: !chart.isDatasetVisible(i),
-              index: i
-            }));
-          },
           pointRadius: 10,
           usePointStyle: true
         }

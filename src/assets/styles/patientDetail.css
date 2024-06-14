@@ -12,13 +12,17 @@
   /* height: 200px; */
   width: 40%;
   display: block;
-  margin: auto;
+  margin: 0 auto 1em;
+}
+
+.patient-details-tile h2 {
+  margin-bottom: 1.5em;;
 }
 
 .patient-detail-inner {
   display: flex;
   gap: 1em;
-  margin-bottom: 1em;
+  margin: 1.5em 0;
   text-align: left;
 }
 

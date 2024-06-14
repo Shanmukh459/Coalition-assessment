@@ -5,6 +5,7 @@ import PatientsList from "./components/PatientsList"
 import PatientDetail from "./components/PatientDetail"
 import DiagnosticList from "./components/DiagnosticList"
 import DiagnosisHistory from "./components/DiagnosisHistory"
+import LabResults from "./components/LabResults"
 
 const App = () => {
   const data = useData()
@@ -13,7 +14,6 @@ const App = () => {
   }
 
   const selectedPatient = data.filter(d => d.name === "Jessica Taylor")[0]
-
   return (
     <div className="app-container">
       <Header />
@@ -21,6 +21,7 @@ const App = () => {
       <PatientDetail patientDetails={selectedPatient}/>
       <DiagnosticList diagnosisRecords={selectedPatient.diagnostic_list} />
       <DiagnosisHistory patientData={selectedPatient}/>
+      <LabResults labResults={selectedPatient.lab_results} />
     </div>
   )
 }

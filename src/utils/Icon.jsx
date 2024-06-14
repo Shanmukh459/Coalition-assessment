@@ -19,6 +19,7 @@ import temperature from "../assets/icons/temperature.svg"
 import heartBPM from "../assets/icons/heartBPM.svg"
 import arrowUp from "../assets/icons/arrowUp.svg"
 import arrowDown from "../assets/icons/arrowDown.svg"
+import download from "../assets/icons/download.svg"
 
 
 const icons = {
@@ -42,6 +43,7 @@ const icons = {
   heartBPM,
   arrowUp,
   arrowDown,
+  download,
 }
 
 const Icon = ({ icon }) => {
