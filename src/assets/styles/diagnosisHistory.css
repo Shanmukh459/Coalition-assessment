@@ -1,0 +1,47 @@
+.diagnosis-history {
+  background-color: #FFFFFF;
+  grid-area: history;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.diagnosis-history h2 {
+  margin-bottom: 2em;
+}
+.diagnosis-results {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;  
+}
+
+.diagnosis-results h3 {
+  margin: 0.2em 0 0.4em;
+}
+
+.respiratory-rate-result {
+  background-color: #E0F3FA;
+}
+
+.temperature-result {
+  background-color: #FFE6E9;
+}
+
+.heart-rate-result {
+  background-color: #FFE6F1;
+}
+
+.respiratory-rate-result,
+.temperature-result,
+.heart-rate-result {
+  padding: 1em;
+  flex: 1;
+  border-radius: 12px;
+}
+
+.result-title {
+  font-weight: 600;
+  margin-top: 0.2em;
+}
+
+.heart-rate-result img{
+  margin-right: 0.4em;
+}

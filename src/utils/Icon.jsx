@@ -14,6 +14,12 @@ import femaleIcon from "../assets/icons/femaleIcon.svg"
 import phoneIcon from "../assets/icons/phoneIcon.svg"
 import birthIcon from "../assets/icons/birthIcon.svg"
 import insuranceIcon from "../assets/icons/insuranceIcon.svg"
+import respiratoryRate from "../assets/icons/respiratoryRate.svg"
+import temperature from "../assets/icons/temperature.svg"
+import heartBPM from "../assets/icons/heartBPM.svg"
+import arrowUp from "../assets/icons/arrowUp.svg"
+import arrowDown from "../assets/icons/arrowDown.svg"
+
 
 const icons = {
   logo,
@@ -31,6 +37,11 @@ const icons = {
   birthIcon,
   phoneIcon,
   insuranceIcon,
+  respiratoryRate,
+  temperature,
+  heartBPM,
+  arrowUp,
+  arrowDown,
 }
 
 const Icon = ({ icon }) => {

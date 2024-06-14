@@ -12,7 +12,6 @@ const DiagnosticList = ({ diagnosisRecords }) => {
     )
 })
 
-  console.log(diagnosisRecordElements)
 
   return (
     <div className='diagnostic-list'>
