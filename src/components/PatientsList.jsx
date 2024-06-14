@@ -5,7 +5,7 @@ import "../assets/styles/patientList.css"
 const PatientsList = ({data}) => {
   const patientsListElements = data.map((d) => {
     return (
-      <div className='patient-tile'>
+      <div className='patient-tile' key={d.name}>
         <div className='patient-icon-details'>
           <img className="person-icon" src={d.profile_picture} />
           <div>

@@ -3,9 +3,7 @@ import Icon from '../utils/Icon'
 import "../assets/styles/patientDetail.css"
 
 const PatientDetail = ({patientDetails}) => {
-  console.log(patientDetails)
-  const { name, profile_picture, date_of_birth, gender, phone_number, emergency_contact, insurance_type} = patientDetails[0]
-  console.log(name)
+  const { name, profile_picture, date_of_birth, gender, phone_number, emergency_contact, insurance_type} = patientDetails
   return (
     <div className='patient-details-tile'>
       <img  className="patient-picture" src={profile_picture} />

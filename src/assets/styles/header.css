@@ -6,7 +6,6 @@ header {
   align-items: center;
   border-radius: 70px;
   padding: 0 1em;
-  font-size: 14px;
   font-weight: 700;
   grid-area: header;
 }

@@ -1,0 +1,30 @@
+.diagnostic-list {
+  background-color: #FFFFFF;
+  padding: 1em;
+  grid-area: list;
+  border-radius: 10px;
+}
+
+.diagnostic-list h2 {
+  margin: 0.5em auto 1em auto;
+}
+
+table {
+  text-align: left;
+  width: 100%;
+  height: 30vh;
+  overflow-y: scroll;
+}
+
+thead tr {
+  background-color: #F6F7F8;
+  margin-bottom: 1.5em;
+
+}
+
+th{
+  padding: 0.5em;
+}
+td {
+  padding: 1.5em;
+}
