@@ -14,7 +14,6 @@ const App = () => {
 
   const selectedPatient = data.filter(d => d.name === "Jessica Taylor")[0]
 
-  console.log(selectedPatient)
   return (
     <div className="app-container">
       <Header />

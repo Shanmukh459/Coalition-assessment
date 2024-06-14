@@ -5,12 +5,13 @@
   box-sizing: border-box;
 }
 .diagnosis-history h2 {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .diagnosis-results {
   display: flex;
   justify-content: space-between;
   gap: 1em;  
+  padding-top: 1em;
 }
 
 .diagnosis-results h3 {
@@ -44,4 +45,9 @@
 
 .heart-rate-result img{
   margin-right: 0.4em;
+}
+
+.results-line-chart {
+  background-color: #F4F0FE;
+  padding: 1em;
 }

@@ -7,7 +7,9 @@ const DiagnosisHistory = ({ patientData }) => {
   return (
     <div className="diagnosis-history">
       <h2>Diagnosis History</h2>
-      <ResultsPlot data={patientData} />
+      <div className="results-line-chart">
+        <ResultsPlot  data={patientData} />
+      </div>
       <div className='diagnosis-results'>
         <div className='respiratory-rate-result'>
           <Icon icon="respiratoryRate" />
