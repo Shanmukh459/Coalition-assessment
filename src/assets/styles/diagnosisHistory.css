@@ -3,31 +3,125 @@
   grid-area: history;
   padding: 1em;
   box-sizing: border-box;
+  
 }
+
 .diagnosis-history h2 {
   margin-bottom: 1em;
 }
+
+.diagnosis-history-grid {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-rows: 1.5fr 1fr;
+  grid-template-areas: 
+    "chartLegend"
+    "historyResults";
+}
+
+
+.chart-legend-container {
+  background-color: #F4F0FE;
+  padding: 1em;
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: space-between;
+  grid-area: chartLegend;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "chart legend"
+}
+
+.line-chart-container {
+  grid-area: chart;
+}
+
+.chart-legend {
+  grid-area: legend;
+}
+
+.chart-legend-item p:first-child::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.chart-legend-item p:first-child {
+  font-weight: 700;
+}
+
+.chart-legend-item h3 {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.systolic p:first-child::before{
+  background-color: #E66FD2;
+}
+
+.diastolic p:first-child::before{
+  background-color: #8C6FE6;
+}
+
+hr {
+  margin: 1.5em 0;
+  color: #CBC8D4;
+  font-weight: 100;
+}
+
+.chart-legend-item div {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .diagnosis-results {
   display: flex;
   justify-content: space-between;
-  gap: 1em;  
+  gap: 1.3em;  
   padding-top: 1em;
+  max-height: 250px;
+  /* grid-area: results; */
 }
 
-.diagnosis-results h3 {
+.diagnosis-results h2 {
   margin: 0.2em 0 0.4em;
+}
+
+.diagnosis-results img {
+  max-width: 45%;
 }
 
 .respiratory-rate-result {
   background-color: #E0F3FA;
+  grid-area: respiratory;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 .temperature-result {
   background-color: #FFE6E9;
+  grid-area: temperature;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .heart-rate-result {
   background-color: #FFE6F1;
+  grid-area: heart;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .respiratory-rate-result,
@@ -47,7 +141,3 @@
   margin-right: 0.4em;
 }
 
-.results-line-chart {
-  background-color: #F4F0FE;
-  padding: 1em;
-}

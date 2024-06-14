@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { getLineChartData } from '../utils/getLineChartData'
 import { Chart, Line } from 'react-chartjs-2'
 import { Chart as ChartJS,
   CategoryScale,
@@ -21,7 +22,6 @@ ChartJS.register(
   Legend,
   Filler
 )
-import { getLineChartData } from '../utils/getLineChartData'
 
 
 const ResultsPlot = ({data}) => {
@@ -30,13 +30,14 @@ const ResultsPlot = ({data}) => {
     responsive: true,
     plugins: {
       legend: {
-        position: "right",
-        align: "start",
+        // position: "right",
+        // align: "start",
         
-        labels: {
-          pointRadius: 10,
-          usePointStyle: true
-        }
+        // labels: {
+        //   pointRadius: 10,
+        //   usePointStyle: true
+        // }
+        display: false
       },
       title: {
         text: "Blood Pressure",
@@ -63,6 +64,7 @@ const ResultsPlot = ({data}) => {
       }
     },
   }
+
   return (
     // <></>
     <Line options={options} data={lineChartData} />
