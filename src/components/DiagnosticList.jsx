@@ -1,33 +1,15 @@
 import React from 'react'
 import "../assets/styles/diagnosticList.css"
+import { getdiagnosisRecordsTable } from '../utils/getDiagnosisRecordsTable'
 
 const DiagnosticList = ({ diagnosisRecords }) => {
-  const diagnosisRecordElements = diagnosisRecords.map((d, i) => {
-    return (
-      <tr key={i}>
-        <td>{d.name}</td>
-        <td>{d.description}</td>
-        <td>{d.status}</td>
-      </tr>
-    )
-})
+  const diagnosisRecordsTable = getdiagnosisRecordsTable(diagnosisRecords)
 
   return (
     <div className='diagnostic-list'>
       <h2>Diagnostic List</h2>
       <div className='table-wrapper'>
-        <table>
-          <thead>
-            <tr>
-              <th>Problem/Diagnosis</th>
-              <th>Description</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {diagnosisRecordElements} 
-          </tbody>
-        </table>
+        {diagnosisRecordsTable}
       </div>
     </div>
   )

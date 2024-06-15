@@ -1,22 +1,12 @@
 import React from 'react'
 import Icon from '../utils/Icon'
 import "../assets/styles/patientList.css"
+import { getPatientListElements } from '../utils/getPatientListElements'
 
 const PatientsList = ({data}) => {
-  const patientsListElements = data.map((d) => {
-    return (
-      <div className='patient-tile' key={d.name}>
-        <div className='patient-icon-details'>
-          <img className="person-icon" src={d.profile_picture} />
-          <div>
-            <p className='name'>{d.name}</p>
-            <p className='gender'>{d.gender}, {d.age}</p>
-          </div>
-        </div>
-        <Icon icon="morehoriz" />
-      </div>
-    )
-  })
+
+  const patientsListElements = getPatientListElements(data)
+  
   return (
     <div className='patients-list-container' id="patients">
       <div className='patients-list-title'>
