@@ -18,14 +18,18 @@
  1. Download the repository
  2. Open command prompt and go to the root directory
  3. Run the following commands
+
   ``npm i``
+  
   ``npm run dev``
-4. Open browser and go to http://localhost:5173/
+  
+5. Open browser and go to http://localhost:5173/
 
 You will see the UI page that is similar to the below screenshot
 
 ## Screenshot 
 
+![image](https://github.com/Shanmukh459/Coalition-assessment/assets/52078988/ccdc8a60-8044-4b18-8100-ebbf3bc38e56)
 
 
 Happy Coding!
